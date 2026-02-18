@@ -105,16 +105,6 @@ if not locate_and_click("Pages.png"):
 time.sleep(20)
 
 # Try to find and click the image "1.png"
-if not locate_and_click("Add-Page.png"):
-    print("ErrorNoAddPage")
-time.sleep(20)
-
-# Try to find and click the image "1.png"
-if not locate_and_click("Standart-Page.png"):
-    print("ErrorNoAddPageStandart")
-time.sleep(20)
-
-# Try to find and click the image "1.png"
 if not locate_and_click("Template.png"):
     print("ErrorNoAddPageStandart")
 time.sleep(20)
@@ -157,15 +147,15 @@ time.sleep(2)
 pyautogui.write(seo_permalink)
 time.sleep(5)
 
-pyautogui.press('del')
+pyautogui.press('backspace')
 time.sleep(2)
-pyautogui.press('del')
+pyautogui.press('backspace')
 time.sleep(2)
-pyautogui.press('del')
+pyautogui.press('backspace')
 time.sleep(2)
-pyautogui.press('del')
+pyautogui.press('backspace')
 time.sleep(2)
-pyautogui.press('del')
+pyautogui.press('backspace')
 time.sleep(2)
 
 pyautogui.press('tab')
@@ -186,6 +176,6 @@ if not locate_and_click("Back-From-Seo.png"):
 time.sleep(20)
 
 # Try to find and click the image "1.png"
-if not locate_and_click("Done.png"):
+if not locate_and_click("Biuld.png"):
     print("ErrorNoDone")
 time.sleep(20)
