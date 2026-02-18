@@ -179,3 +179,59 @@ time.sleep(20)
 if not locate_and_click("Biuld.png"):
     print("ErrorNoDone")
 time.sleep(20)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "copy"
+pyautogui.write("Click")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Here-To-Edit.png"):
+    print("ErrorNoDone")
+time.sleep(5)
+
+pyautogui.write(article_name)
+time.sleep(2)
+pyautogui.press(enter)
+time.sleep(2)
+pyautogui.press(enter)
+time.sleep(2)
+pyautogui.press(enter)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "copy"
+pyautogui.write("Click to set")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Custom-Html.png"):
+    print("ErrorNoDone")
+time.sleep(10)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Edit-Custom-Html.png"):
+    print("ErrorNoDone")
+time.sleep(10)
+
+pyautogui.write(article_html)
+time.sleep(5)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Basic.png"):
+    print("ErrorNoDone")
+time.sleep(5)
+
