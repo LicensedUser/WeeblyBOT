@@ -114,6 +114,26 @@ if not locate_and_click("Standart-Page.png"):
     print("ErrorNoAddPageStandart")
 time.sleep(20)
 
+# Try to find and click the image "1.png"
+if not locate_and_click("Template.png"):
+    print("ErrorNoAddPageStandart")
+time.sleep(20)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Copy.png"):
+    print("ErrorNoAddPageStandart")
+time.sleep(20)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Template.png"):
+    print("ErrorNoAddPageStandart")
+time.sleep(20)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Page-Name.png"):
+    print("ErrorNoAddPageStandart")
+time.sleep(20)
+
 pyautogui.write(short_page_name)
 time.sleep(5)
 
@@ -167,10 +187,5 @@ time.sleep(20)
 
 # Try to find and click the image "1.png"
 if not locate_and_click("Done.png"):
-    print("ErrorNoDone")
-time.sleep(20)
-
-# Try to find and click the image "1.png"
-if not locate_and_click("Biuld.png"):
     print("ErrorNoDone")
 time.sleep(20)
