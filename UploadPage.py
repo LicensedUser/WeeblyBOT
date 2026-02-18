@@ -154,3 +154,8 @@ time.sleep(5)
 if not locate_and_click("Back-From-Seo.png"):
     print("ErrorNoBackFromSeo")
 time.sleep(20)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Done.png"):
+    print("ErrorNoDone")
+time.sleep(20)
