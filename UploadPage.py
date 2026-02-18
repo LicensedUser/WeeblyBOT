@@ -244,3 +244,7 @@ if not locate_and_click("Basic.png"):
     print("ErrorNoDone")
 time.sleep(5)
 
+# Try to find and click the image "1.png"
+if not locate_and_click("Publish.png"):
+    print("ErrorNoDone")
+time.sleep(5)
