@@ -199,11 +199,11 @@ time.sleep(5)
 
 pyautogui.write(article_name)
 time.sleep(2)
-pyautogui.press(enter)
+pyautogui.press('enter')
 time.sleep(2)
-pyautogui.press(enter)
+pyautogui.press('enter')
 time.sleep(2)
-pyautogui.press(enter)
+pyautogui.press('enter')
 
 # Press Ctrl + F
 pyautogui.hotkey('ctrl', 'f')
