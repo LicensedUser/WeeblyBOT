@@ -104,6 +104,18 @@ if not locate_and_click("Pages.png"):
     print("ErrorNoPage")
 time.sleep(20)
 
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "copy"
+pyautogui.write("TEMPLATE")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('enter')
+time.sleep(2)
+
 # Try to find and click the image "1.png"
 if not locate_and_click("Template.png"):
     print("ErrorNoAddPageStandart")
