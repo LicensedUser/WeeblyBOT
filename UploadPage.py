@@ -223,6 +223,11 @@ if not locate_and_click("Custom-Html.png"):
 time.sleep(10)
 
 # Try to find and click the image "1.png"
+if not locate_and_click("Custom-Html.png"):
+    print("ErrorNoDone")
+time.sleep(10)
+
+# Try to find and click the image "1.png"
 if not locate_and_click("Edit-Custom-Html.png"):
     print("ErrorNoDone")
 time.sleep(10)
