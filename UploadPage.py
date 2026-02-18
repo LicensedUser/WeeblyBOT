@@ -133,11 +133,20 @@ time.sleep(5)
 pyautogui.press('tab')
 time.sleep(2)
 
-permalink = preg_replace('/\.html$/i', '', permalink);
+
 pyautogui.write(seo_permalink)
 time.sleep(5)
 
-pyautogui.press('delete', presses=5, interval=1)  # 0.1s between presses
+pyautogui.press('del')
+time.sleep(2)
+pyautogui.press('del')
+time.sleep(2)
+pyautogui.press('del')
+time.sleep(2)
+pyautogui.press('del')
+time.sleep(2)
+pyautogui.press('del')
+time.sleep(2)
 
 pyautogui.press('tab')
 time.sleep(2)
