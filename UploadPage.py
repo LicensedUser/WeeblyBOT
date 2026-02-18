@@ -111,7 +111,7 @@ if not locate_and_click("Standart-Page.png"):
     print("ErrorNoAddPageStandart")
 time.sleep(20)
 
-pyautogui.write($short_page_name)
+pyautogui.write(short_page_name)
 time.sleep(5)
 
 # Try to find and click the image "1.png"
