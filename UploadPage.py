@@ -3,21 +3,41 @@ import webbrowser
 import pyautogui
 import time
 import pyperclip
+import csv
 
+# Open Weebly
 webbrowser.open("https://www.weebly.com")
-# Wait 60 seconds for page to load
+
+# Wait for manual login / page load
 time.sleep(60)
 
+# Get CSV data from clipboard
 clipboard_data = pyperclip.paste()
 
-# Step 2: Write to TempCSV.csv
+# Write clipboard data to temp CSV
 temp_csv = "TempCSV.csv"
 with open(temp_csv, "w", newline="", encoding="utf-8") as f:
     f.write(clipboard_data)
 
-# Step 3: Read the CSV
+# Read CSV
 with open(temp_csv, newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
-    row = next(reader)
+    row = next(reader)  # first row
 
-#PAGE-NAME,#PAGE-TITLE,#PAGE-PERMA-LINK-.HTML,#PAGE-DESCRIPTION,#META-KEYWORDS,#ARTICLE-NAME,#ARTICLE-HTML
+# Access fields using your new headers
+short_page_name  = row["#SHORT-PAGE-NAME"]
+seo_title        = row["#SEO-PAGE-TITLE"]
+seo_permalink    = row["#SEO-PAGE-PERMA-LINK-.HTML"]
+seo_description  = row["#SEO-PAGE-DESCRIPTION"]
+seo_keywords     = row["#SEO-META-KEYWORDS"]
+article_name     = row["#ARTICLE-NAME"]
+article_html     = row["#ARTICLE-HTML"]
+
+# Debug output
+print("Short Page Name:", short_page_name)
+print("SEO Title:", seo_title)
+print("Permalink:", seo_permalink)
+print("SEO Description:", seo_description)
+print("SEO Keywords:", seo_keywords)
+print("Article Name:", article_name)
+print("Article HTML:", article_html)
