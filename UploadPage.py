@@ -139,6 +139,13 @@ time.sleep(20)
 pyautogui.write(short_page_name)
 time.sleep(5)
 
+pyautogui.press('tab')
+time.sleep(2)
+
+pyautogui.press('space')
+time.sleep(2)
+
+
 # Try to find and click the image "1.png"
 if not locate_and_click("Seo-Settings.png"):
     print("ErrorNoSeoSettings")
