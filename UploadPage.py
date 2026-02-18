@@ -126,3 +126,31 @@ time.sleep(20)
 if not locate_and_click("Page-Title.png"):
     print("ErrorNoPage_Title")
 time.sleep(20)
+
+pyautogui.write(seo_title)
+time.sleep(5)
+
+pyautogui.press('tab')
+tiem.sleep(2)
+
+pyautogui.write(seo_permalink)
+time.sleep(5)
+
+pyautogui.press('delete', presses=5, interval=1)  # 0.1s between presses
+
+pyautogui.press('tab')
+tiem.sleep(2)
+
+pyautogui.write(seo_description)
+time.sleep(5)
+
+pyautogui.press('tab')
+tiem.sleep(2)
+
+pyautogui.write(seo_keywords)
+time.sleep(5)
+
+# Try to find and click the image "1.png"
+if not locate_and_click("Back-From-Seo.png"):
+    print("ErrorNoBackFromSeo")
+time.sleep(20)
