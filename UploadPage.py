@@ -113,7 +113,7 @@ pyautogui.write("TEMPLATE")
 time.sleep(2)
 
 # Press ESC
-pyautogui.press('enter')
+pyautogui.press('esc')
 time.sleep(2)
 
 # Try to find and click the image "1.png"
