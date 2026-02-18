@@ -5,6 +5,9 @@ import time
 import pyperclip
 import csv
 
+import numpy as np
+import cv2
+
 def find_with_opencv(template_path, threshold=0.85):
     # Take a screenshot and convert it to OpenCV format (grayscale)
     screenshot = pyautogui.screenshot()
