@@ -131,7 +131,7 @@ pyautogui.write(seo_title)
 time.sleep(5)
 
 pyautogui.press('tab')
-tiem.sleep(2)
+time.sleep(2)
 
 pyautogui.write(seo_permalink)
 time.sleep(5)
@@ -145,7 +145,7 @@ pyautogui.write(seo_description)
 time.sleep(5)
 
 pyautogui.press('tab')
-tiem.sleep(2)
+time.sleep(2)
 
 pyautogui.write(seo_keywords)
 time.sleep(5)
