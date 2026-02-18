@@ -257,6 +257,8 @@ time.sleep(1)
 # Paste (Ctrl+V)
 pyautogui.hotkey('ctrl', 'v')
 time.sleep(5)
+pyautogui.press('backspace')
+time.sleep(2)
 
 # Try to find and click the image "1.png"
 if not locate_and_click("Basic.png"):
