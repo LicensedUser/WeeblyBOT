@@ -232,7 +232,7 @@ if not locate_and_click("Edit-Custom-Html.png"):
     print("ErrorNoDone")
 time.sleep(10)
 
-pyautogui.write(article_html)
+pyautogui.write(article_html, interval=0.1)
 time.sleep(5)
 
 # Try to find and click the image "1.png"
